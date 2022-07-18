@@ -1,10 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import pdf_cv from "../../Assets/resume.pdf";
-import pdf_master from "../../Assets/master.pdf";
-import pdf_english from "../../Assets/b2.pdf";
-import pdf_certificates from "../../Assets/certificates.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Card, CardMedia, Tooltip } from "@mui/material";
 import Footer from "@/components/Footer";
@@ -36,17 +32,13 @@ function Index() {
 				</Row>
 
 				<Row style={{ justifyContent: "center", position: "relative" }}>
-					<Tooltip title="CLICK ME"><Button
+					<Tooltip title="CLICK ME"><a href='/resume.pdf' download><Button
 						variant="primary"
 						style={{ maxWidth: "250px" }}
-						href={
-							pdf_cv
-						}
-						target="_blank"
 					>
 						<AiOutlineDownload />
 						&nbsp;Download Resume
-					</Button></Tooltip>
+					</Button></a></Tooltip>
 				</Row>
 				{/*                                 MASTER                                                 */}
 				<Row style={{ justifyContent: "center", position: "relative" }}>
@@ -66,17 +58,13 @@ function Index() {
 				</Row>
 
 				<Row style={{ justifyContent: "center", position: "relative" }}>
-					<Tooltip title="CLICK ME"><Button
+					<Tooltip title="CLICK ME"><a href='/master.pdf' download><Button
 						variant="primary"
 						style={{ maxWidth: "250px" }}
-						href={
-							pdf_master
-						}
-						target="_blank"
 					>
 						<AiOutlineDownload />
 						&nbsp;Download Constancy
-					</Button></Tooltip>
+					</Button></a></Tooltip>
 				</Row>
 				{/*                                 English                                                 */}
 				<br />
@@ -98,17 +86,13 @@ function Index() {
 				</Row>
 
 				<Row style={{ justifyContent: "center", position: "relative" }}>
-					<Tooltip title="CLICK ME"><Button
+					<Tooltip title="CLICK ME"><a href='/b2.pdf' download><Button
 						variant="primary"
 						style={{ maxWidth: "250px" }}
-						href={
-							pdf_english
-						}
-						target="_blank"
 					>
 						<AiOutlineDownload />
 						&nbsp;Download Certificate
-					</Button></Tooltip>
+					</Button></a></Tooltip>
 				</Row>
 				{/*                                 certificates                                                 */}
 				<br />
@@ -130,17 +114,13 @@ function Index() {
 				</Row>
 
 				<Row style={{ justifyContent: "center", position: "relative" }}>
-					<Tooltip title="CLICK ME"><Button
+					<Tooltip title="CLICK ME"><a href='/certificates.pdf' download><Button
 						variant="primary"
 						style={{ maxWidth: "250px" }}
-						href={
-							pdf_certificates
-						}
-						target="_blank"
 					>
 						<AiOutlineDownload />
 						&nbsp;Download Certificates
-					</Button></Tooltip>
+					</Button></a></Tooltip>
 				</Row>
 			</Container>
 			<Footer /> 
