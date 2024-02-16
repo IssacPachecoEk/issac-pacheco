@@ -1,4 +1,5 @@
 import { Fragment,useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { BrowserRouter } from 'react-router-dom';
 import { withErrorHandler } from '@/error-handling';
 import AppErrorBoundaryFallback from '@/error-handling/fallbacks/App';
@@ -32,6 +33,7 @@ function App() {
       <ScrollToTop smooth color="black" />
         <Navbar />
         <Pages />
+        <Analytics />
       </BrowserRouter>
       </div>
     </Fragment>
