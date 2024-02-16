@@ -100,7 +100,7 @@ The last one is a router-based switcher. All routes are defined in [src/routes](
 
   and check `https://localhost` in your browser.
 
-## [Live]()
+## [Live](https://issac-pacheco-ek.vercel.app/)
 
 <div>
  <img src="./public/main-page-issac.png" width="280" title="Dark demo">
