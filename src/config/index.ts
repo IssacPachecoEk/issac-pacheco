@@ -47,7 +47,7 @@ const loader = {
 
 const defaultMetaTags = {
   image: '/main-page-issac.png',
-  description: 'This project my modern web application',
+  description: 'issac nolberto pacheco ek',
 };
 
 export {
